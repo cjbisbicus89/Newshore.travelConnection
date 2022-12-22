@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "s5rcm2fSR1nzcNtBwaW5Iki9/ma0jSOdCyP1XHd12picr2U26+Vx1FQeDl3Hx+KZfSqIkVvDCNQ892CC1MCkAg==",
+  "success": true,
+  "projectFilePath": "C:\\CB\\Newshore.travelConnection\\Newshore.travelConnection.Transversal.Mapper\\Newshore.travelConnection.Transversal.Mapper.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Cristian\\.nuget\\packages\\automapper\\12.0.0\\automapper.12.0.0.nupkg.sha512",
+    "C:\\Users\\Cristian\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512"
+  ],
+  "logs": []
+}

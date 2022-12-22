@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "vvaxO8SAmSuM7f61d9KbF1gNSCLNkSxyTWqQJGZwdbdHk1ShAa76dNl0YFbJU/UTg+cW0CsHgsfOr7VPEIrJYg==",
+  "success": true,
+  "projectFilePath": "C:\\CB\\Newshore.travelConnection\\Newshore.travelConnection.Application.Main\\Newshore.travelConnection.Application.Main.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Cristian\\.nuget\\packages\\automapper\\12.0.0\\automapper.12.0.0.nupkg.sha512",
+    "C:\\Users\\Cristian\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512"
+  ],
+  "logs": []
+}

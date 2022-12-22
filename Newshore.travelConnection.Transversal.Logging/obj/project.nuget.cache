@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "dgSpecHash": "a2Y8QqASoC7RYCZwLDd1H1G7PT1BGpTYiuMkNsz1fgU2YKjCcSKZta8bXVUGXTE7n7HRwrfBJ3OVm2nWRwfsQA==",
+  "success": true,
+  "projectFilePath": "C:\\CB\\Newshore.travelConnection\\Newshore.travelConnection.Transversal.Logging\\Newshore.travelConnection.Transversal.Logging.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Cristian\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\7.0.0\\microsoft.extensions.dependencyinjection.7.0.0.nupkg.sha512",
+    "C:\\Users\\Cristian\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\7.0.0\\microsoft.extensions.dependencyinjection.abstractions.7.0.0.nupkg.sha512",
+    "C:\\Users\\Cristian\\.nuget\\packages\\microsoft.extensions.logging\\7.0.0\\microsoft.extensions.logging.7.0.0.nupkg.sha512",
+    "C:\\Users\\Cristian\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\7.0.0\\microsoft.extensions.logging.abstractions.7.0.0.nupkg.sha512",
+    "C:\\Users\\Cristian\\.nuget\\packages\\microsoft.extensions.options\\7.0.0\\microsoft.extensions.options.7.0.0.nupkg.sha512",
+    "C:\\Users\\Cristian\\.nuget\\packages\\microsoft.extensions.primitives\\7.0.0\\microsoft.extensions.primitives.7.0.0.nupkg.sha512",
+    "C:\\Users\\Cristian\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

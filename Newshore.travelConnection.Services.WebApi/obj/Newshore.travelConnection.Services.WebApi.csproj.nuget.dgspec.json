@@ -1,0 +1,946 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\CB\\Newshore.travelConnection\\Newshore.travelConnection.Services.WebApi\\Newshore.travelConnection.Services.WebApi.csproj": {}
+  },
+  "projects": {
+    "C:\\CB\\Newshore.travelConnection\\Newshore.travelConnection.Application.DTO\\Newshore.travelConnection.Application.DTO.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\CB\\Newshore.travelConnection\\Newshore.travelConnection.Application.DTO\\Newshore.travelConnection.Application.DTO.csproj",
+        "projectName": "Newshore.travelConnection.Application.DTO",
+        "projectPath": "C:\\CB\\Newshore.travelConnection\\Newshore.travelConnection.Application.DTO\\Newshore.travelConnection.Application.DTO.csproj",
+        "packagesPath": "C:\\Users\\Cristian\\.nuget\\packages\\",
+        "outputPath": "C:\\CB\\Newshore.travelConnection\\Newshore.travelConnection.Application.DTO\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Cristian\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\CB\\Newshore.travelConnection\\Newshore.travelConnection.Application.Interface\\Newshore.travelConnection.Application.Interface.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\CB\\Newshore.travelConnection\\Newshore.travelConnection.Application.Interface\\Newshore.travelConnection.Application.Interface.csproj",
+        "projectName": "Newshore.travelConnection.Application.Interface",
+        "projectPath": "C:\\CB\\Newshore.travelConnection\\Newshore.travelConnection.Application.Interface\\Newshore.travelConnection.Application.Interface.csproj",
+        "packagesPath": "C:\\Users\\Cristian\\.nuget\\packages\\",
+        "outputPath": "C:\\CB\\Newshore.travelConnection\\Newshore.travelConnection.Application.Interface\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Cristian\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\CB\\Newshore.travelConnection\\Newshore.travelConnection.Application.DTO\\Newshore.travelConnection.Application.DTO.csproj": {
+                "projectPath": "C:\\CB\\Newshore.travelConnection\\Newshore.travelConnection.Application.DTO\\Newshore.travelConnection.Application.DTO.csproj"
+              },
+              "C:\\CB\\Newshore.travelConnection\\Newshore.travelConnection.Domain.Entity\\Newshore.travelConnection.Domain.Entity.csproj": {
+                "projectPath": "C:\\CB\\Newshore.travelConnection\\Newshore.travelConnection.Domain.Entity\\Newshore.travelConnection.Domain.Entity.csproj"
+              },
+              "C:\\CB\\Newshore.travelConnection\\Newshore.travelConnection.Transversal.Common\\Newshore.travelConnection.Transversal.Common.csproj": {
+                "projectPath": "C:\\CB\\Newshore.travelConnection\\Newshore.travelConnection.Transversal.Common\\Newshore.travelConnection.Transversal.Common.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\CB\\Newshore.travelConnection\\Newshore.travelConnection.Application.Main\\Newshore.travelConnection.Application.Main.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\CB\\Newshore.travelConnection\\Newshore.travelConnection.Application.Main\\Newshore.travelConnection.Application.Main.csproj",
+        "projectName": "Newshore.travelConnection.Application.Main",
+        "projectPath": "C:\\CB\\Newshore.travelConnection\\Newshore.travelConnection.Application.Main\\Newshore.travelConnection.Application.Main.csproj",
+        "packagesPath": "C:\\Users\\Cristian\\.nuget\\packages\\",
+        "outputPath": "C:\\CB\\Newshore.travelConnection\\Newshore.travelConnection.Application.Main\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Cristian\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\CB\\Newshore.travelConnection\\Newshore.travelConnection.Application.DTO\\Newshore.travelConnection.Application.DTO.csproj": {
+                "projectPath": "C:\\CB\\Newshore.travelConnection\\Newshore.travelConnection.Application.DTO\\Newshore.travelConnection.Application.DTO.csproj"
+              },
+              "C:\\CB\\Newshore.travelConnection\\Newshore.travelConnection.Application.Interface\\Newshore.travelConnection.Application.Interface.csproj": {
+                "projectPath": "C:\\CB\\Newshore.travelConnection\\Newshore.travelConnection.Application.Interface\\Newshore.travelConnection.Application.Interface.csproj"
+              },
+              "C:\\CB\\Newshore.travelConnection\\Newshore.travelConnection.Domain.Entity\\Newshore.travelConnection.Domain.Entity.csproj": {
+                "projectPath": "C:\\CB\\Newshore.travelConnection\\Newshore.travelConnection.Domain.Entity\\Newshore.travelConnection.Domain.Entity.csproj"
+              },
+              "C:\\CB\\Newshore.travelConnection\\Newshore.travelConnection.Domain.Interface\\Newshore.travelConnection.Domain.Interface.csproj": {
+                "projectPath": "C:\\CB\\Newshore.travelConnection\\Newshore.travelConnection.Domain.Interface\\Newshore.travelConnection.Domain.Interface.csproj"
+              },
+              "C:\\CB\\Newshore.travelConnection\\Newshore.travelConnection.Transversal.Common\\Newshore.travelConnection.Transversal.Common.csproj": {
+                "projectPath": "C:\\CB\\Newshore.travelConnection\\Newshore.travelConnection.Transversal.Common\\Newshore.travelConnection.Transversal.Common.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[12.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\CB\\Newshore.travelConnection\\Newshore.travelConnection.Domain.Core\\Newshore.travelConnection.Domain.Core.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\CB\\Newshore.travelConnection\\Newshore.travelConnection.Domain.Core\\Newshore.travelConnection.Domain.Core.csproj",
+        "projectName": "Newshore.travelConnection.Domain.Core",
+        "projectPath": "C:\\CB\\Newshore.travelConnection\\Newshore.travelConnection.Domain.Core\\Newshore.travelConnection.Domain.Core.csproj",
+        "packagesPath": "C:\\Users\\Cristian\\.nuget\\packages\\",
+        "outputPath": "C:\\CB\\Newshore.travelConnection\\Newshore.travelConnection.Domain.Core\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Cristian\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\CB\\Newshore.travelConnection\\Newshore.travelConnection.Domain.Entity\\Newshore.travelConnection.Domain.Entity.csproj": {
+                "projectPath": "C:\\CB\\Newshore.travelConnection\\Newshore.travelConnection.Domain.Entity\\Newshore.travelConnection.Domain.Entity.csproj"
+              },
+              "C:\\CB\\Newshore.travelConnection\\Newshore.travelConnection.Domain.Interface\\Newshore.travelConnection.Domain.Interface.csproj": {
+                "projectPath": "C:\\CB\\Newshore.travelConnection\\Newshore.travelConnection.Domain.Interface\\Newshore.travelConnection.Domain.Interface.csproj"
+              },
+              "C:\\CB\\Newshore.travelConnection\\Newshore.travelConnection.Infrastructure.Interface\\Newshore.travelConnection.Infrastructure.Interface.csproj": {
+                "projectPath": "C:\\CB\\Newshore.travelConnection\\Newshore.travelConnection.Infrastructure.Interface\\Newshore.travelConnection.Infrastructure.Interface.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\CB\\Newshore.travelConnection\\Newshore.travelConnection.Domain.Entity\\Newshore.travelConnection.Domain.Entity.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\CB\\Newshore.travelConnection\\Newshore.travelConnection.Domain.Entity\\Newshore.travelConnection.Domain.Entity.csproj",
+        "projectName": "Newshore.travelConnection.Domain.Entity",
+        "projectPath": "C:\\CB\\Newshore.travelConnection\\Newshore.travelConnection.Domain.Entity\\Newshore.travelConnection.Domain.Entity.csproj",
+        "packagesPath": "C:\\Users\\Cristian\\.nuget\\packages\\",
+        "outputPath": "C:\\CB\\Newshore.travelConnection\\Newshore.travelConnection.Domain.Entity\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Cristian\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\CB\\Newshore.travelConnection\\Newshore.travelConnection.Domain.Interface\\Newshore.travelConnection.Domain.Interface.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\CB\\Newshore.travelConnection\\Newshore.travelConnection.Domain.Interface\\Newshore.travelConnection.Domain.Interface.csproj",
+        "projectName": "Newshore.travelConnection.Domain.Interface",
+        "projectPath": "C:\\CB\\Newshore.travelConnection\\Newshore.travelConnection.Domain.Interface\\Newshore.travelConnection.Domain.Interface.csproj",
+        "packagesPath": "C:\\Users\\Cristian\\.nuget\\packages\\",
+        "outputPath": "C:\\CB\\Newshore.travelConnection\\Newshore.travelConnection.Domain.Interface\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Cristian\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\CB\\Newshore.travelConnection\\Newshore.travelConnection.Domain.Entity\\Newshore.travelConnection.Domain.Entity.csproj": {
+                "projectPath": "C:\\CB\\Newshore.travelConnection\\Newshore.travelConnection.Domain.Entity\\Newshore.travelConnection.Domain.Entity.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\CB\\Newshore.travelConnection\\Newshore.travelConnection.Infrastructure.Data\\Newshore.travelConnection.Infrastructure.Data.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\CB\\Newshore.travelConnection\\Newshore.travelConnection.Infrastructure.Data\\Newshore.travelConnection.Infrastructure.Data.csproj",
+        "projectName": "Newshore.travelConnection.Infrastructure.Data",
+        "projectPath": "C:\\CB\\Newshore.travelConnection\\Newshore.travelConnection.Infrastructure.Data\\Newshore.travelConnection.Infrastructure.Data.csproj",
+        "packagesPath": "C:\\Users\\Cristian\\.nuget\\packages\\",
+        "outputPath": "C:\\CB\\Newshore.travelConnection\\Newshore.travelConnection.Infrastructure.Data\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Cristian\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\CB\\Newshore.travelConnection\\Newshore.travelConnection.Transversal.Common\\Newshore.travelConnection.Transversal.Common.csproj": {
+                "projectPath": "C:\\CB\\Newshore.travelConnection\\Newshore.travelConnection.Transversal.Common\\Newshore.travelConnection.Transversal.Common.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.5, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\CB\\Newshore.travelConnection\\Newshore.travelConnection.Infrastructure.Interface\\Newshore.travelConnection.Infrastructure.Interface.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\CB\\Newshore.travelConnection\\Newshore.travelConnection.Infrastructure.Interface\\Newshore.travelConnection.Infrastructure.Interface.csproj",
+        "projectName": "Newshore.travelConnection.Infrastructure.Interface",
+        "projectPath": "C:\\CB\\Newshore.travelConnection\\Newshore.travelConnection.Infrastructure.Interface\\Newshore.travelConnection.Infrastructure.Interface.csproj",
+        "packagesPath": "C:\\Users\\Cristian\\.nuget\\packages\\",
+        "outputPath": "C:\\CB\\Newshore.travelConnection\\Newshore.travelConnection.Infrastructure.Interface\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Cristian\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\CB\\Newshore.travelConnection\\Newshore.travelConnection.Domain.Entity\\Newshore.travelConnection.Domain.Entity.csproj": {
+                "projectPath": "C:\\CB\\Newshore.travelConnection\\Newshore.travelConnection.Domain.Entity\\Newshore.travelConnection.Domain.Entity.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\CB\\Newshore.travelConnection\\Newshore.travelConnection.Infrastructure.Repository\\Newshore.travelConnection.Infrastructure.Repository.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\CB\\Newshore.travelConnection\\Newshore.travelConnection.Infrastructure.Repository\\Newshore.travelConnection.Infrastructure.Repository.csproj",
+        "projectName": "Newshore.travelConnection.Infrastructure.Repository",
+        "projectPath": "C:\\CB\\Newshore.travelConnection\\Newshore.travelConnection.Infrastructure.Repository\\Newshore.travelConnection.Infrastructure.Repository.csproj",
+        "packagesPath": "C:\\Users\\Cristian\\.nuget\\packages\\",
+        "outputPath": "C:\\CB\\Newshore.travelConnection\\Newshore.travelConnection.Infrastructure.Repository\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Cristian\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\CB\\Newshore.travelConnection\\Newshore.travelConnection.Infrastructure.Data\\Newshore.travelConnection.Infrastructure.Data.csproj": {
+                "projectPath": "C:\\CB\\Newshore.travelConnection\\Newshore.travelConnection.Infrastructure.Data\\Newshore.travelConnection.Infrastructure.Data.csproj"
+              },
+              "C:\\CB\\Newshore.travelConnection\\Newshore.travelConnection.Infrastructure.Interface\\Newshore.travelConnection.Infrastructure.Interface.csproj": {
+                "projectPath": "C:\\CB\\Newshore.travelConnection\\Newshore.travelConnection.Infrastructure.Interface\\Newshore.travelConnection.Infrastructure.Interface.csproj"
+              },
+              "C:\\CB\\Newshore.travelConnection\\Newshore.travelConnection.Transversal.Common\\Newshore.travelConnection.Transversal.Common.csproj": {
+                "projectPath": "C:\\CB\\Newshore.travelConnection\\Newshore.travelConnection.Transversal.Common\\Newshore.travelConnection.Transversal.Common.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Dapper": {
+              "target": "Package",
+              "version": "[2.0.123, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\CB\\Newshore.travelConnection\\Newshore.travelConnection.Services.WebApi\\Newshore.travelConnection.Services.WebApi.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\CB\\Newshore.travelConnection\\Newshore.travelConnection.Services.WebApi\\Newshore.travelConnection.Services.WebApi.csproj",
+        "projectName": "Newshore.travelConnection.Services.WebApi",
+        "projectPath": "C:\\CB\\Newshore.travelConnection\\Newshore.travelConnection.Services.WebApi\\Newshore.travelConnection.Services.WebApi.csproj",
+        "packagesPath": "C:\\Users\\Cristian\\.nuget\\packages\\",
+        "outputPath": "C:\\CB\\Newshore.travelConnection\\Newshore.travelConnection.Services.WebApi\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Cristian\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\CB\\Newshore.travelConnection\\Newshore.travelConnection.Application.DTO\\Newshore.travelConnection.Application.DTO.csproj": {
+                "projectPath": "C:\\CB\\Newshore.travelConnection\\Newshore.travelConnection.Application.DTO\\Newshore.travelConnection.Application.DTO.csproj"
+              },
+              "C:\\CB\\Newshore.travelConnection\\Newshore.travelConnection.Application.Interface\\Newshore.travelConnection.Application.Interface.csproj": {
+                "projectPath": "C:\\CB\\Newshore.travelConnection\\Newshore.travelConnection.Application.Interface\\Newshore.travelConnection.Application.Interface.csproj"
+              },
+              "C:\\CB\\Newshore.travelConnection\\Newshore.travelConnection.Application.Main\\Newshore.travelConnection.Application.Main.csproj": {
+                "projectPath": "C:\\CB\\Newshore.travelConnection\\Newshore.travelConnection.Application.Main\\Newshore.travelConnection.Application.Main.csproj"
+              },
+              "C:\\CB\\Newshore.travelConnection\\Newshore.travelConnection.Domain.Core\\Newshore.travelConnection.Domain.Core.csproj": {
+                "projectPath": "C:\\CB\\Newshore.travelConnection\\Newshore.travelConnection.Domain.Core\\Newshore.travelConnection.Domain.Core.csproj"
+              },
+              "C:\\CB\\Newshore.travelConnection\\Newshore.travelConnection.Domain.Entity\\Newshore.travelConnection.Domain.Entity.csproj": {
+                "projectPath": "C:\\CB\\Newshore.travelConnection\\Newshore.travelConnection.Domain.Entity\\Newshore.travelConnection.Domain.Entity.csproj"
+              },
+              "C:\\CB\\Newshore.travelConnection\\Newshore.travelConnection.Domain.Interface\\Newshore.travelConnection.Domain.Interface.csproj": {
+                "projectPath": "C:\\CB\\Newshore.travelConnection\\Newshore.travelConnection.Domain.Interface\\Newshore.travelConnection.Domain.Interface.csproj"
+              },
+              "C:\\CB\\Newshore.travelConnection\\Newshore.travelConnection.Infrastructure.Data\\Newshore.travelConnection.Infrastructure.Data.csproj": {
+                "projectPath": "C:\\CB\\Newshore.travelConnection\\Newshore.travelConnection.Infrastructure.Data\\Newshore.travelConnection.Infrastructure.Data.csproj"
+              },
+              "C:\\CB\\Newshore.travelConnection\\Newshore.travelConnection.Infrastructure.Interface\\Newshore.travelConnection.Infrastructure.Interface.csproj": {
+                "projectPath": "C:\\CB\\Newshore.travelConnection\\Newshore.travelConnection.Infrastructure.Interface\\Newshore.travelConnection.Infrastructure.Interface.csproj"
+              },
+              "C:\\CB\\Newshore.travelConnection\\Newshore.travelConnection.Infrastructure.Repository\\Newshore.travelConnection.Infrastructure.Repository.csproj": {
+                "projectPath": "C:\\CB\\Newshore.travelConnection\\Newshore.travelConnection.Infrastructure.Repository\\Newshore.travelConnection.Infrastructure.Repository.csproj"
+              },
+              "C:\\CB\\Newshore.travelConnection\\Newshore.travelConnection.Transversal.Common\\Newshore.travelConnection.Transversal.Common.csproj": {
+                "projectPath": "C:\\CB\\Newshore.travelConnection\\Newshore.travelConnection.Transversal.Common\\Newshore.travelConnection.Transversal.Common.csproj"
+              },
+              "C:\\CB\\Newshore.travelConnection\\Newshore.travelConnection.Transversal.Logging\\Newshore.travelConnection.Transversal.Logging.csproj": {
+                "projectPath": "C:\\CB\\Newshore.travelConnection\\Newshore.travelConnection.Transversal.Logging\\Newshore.travelConnection.Transversal.Logging.csproj"
+              },
+              "C:\\CB\\Newshore.travelConnection\\Newshore.travelConnection.Transversal.Mapper\\Newshore.travelConnection.Transversal.Mapper.csproj": {
+                "projectPath": "C:\\CB\\Newshore.travelConnection\\Newshore.travelConnection.Transversal.Mapper\\Newshore.travelConnection.Transversal.Mapper.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[12.0.0, )"
+            },
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[12.0.0, )"
+            },
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[6.0.2, )"
+            },
+            "Microsoft.AspNetCore.Razor.Design": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.1.2, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.4.0, )"
+            },
+            "Swashbuckle.AspNetCore.Swagger": {
+              "target": "Package",
+              "version": "[6.4.0, )"
+            },
+            "Swashbuckle.AspNetCore.SwaggerGen": {
+              "target": "Package",
+              "version": "[6.4.0, )"
+            },
+            "Swashbuckle.AspNetCore.SwaggerUI": {
+              "target": "Package",
+              "version": "[6.4.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\CB\\Newshore.travelConnection\\Newshore.travelConnection.Transversal.Common\\Newshore.travelConnection.Transversal.Common.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\CB\\Newshore.travelConnection\\Newshore.travelConnection.Transversal.Common\\Newshore.travelConnection.Transversal.Common.csproj",
+        "projectName": "Newshore.travelConnection.Transversal.Common",
+        "projectPath": "C:\\CB\\Newshore.travelConnection\\Newshore.travelConnection.Transversal.Common\\Newshore.travelConnection.Transversal.Common.csproj",
+        "packagesPath": "C:\\Users\\Cristian\\.nuget\\packages\\",
+        "outputPath": "C:\\CB\\Newshore.travelConnection\\Newshore.travelConnection.Transversal.Common\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Cristian\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\CB\\Newshore.travelConnection\\Newshore.travelConnection.Transversal.Logging\\Newshore.travelConnection.Transversal.Logging.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\CB\\Newshore.travelConnection\\Newshore.travelConnection.Transversal.Logging\\Newshore.travelConnection.Transversal.Logging.csproj",
+        "projectName": "Newshore.travelConnection.Transversal.Logging",
+        "projectPath": "C:\\CB\\Newshore.travelConnection\\Newshore.travelConnection.Transversal.Logging\\Newshore.travelConnection.Transversal.Logging.csproj",
+        "packagesPath": "C:\\Users\\Cristian\\.nuget\\packages\\",
+        "outputPath": "C:\\CB\\Newshore.travelConnection\\Newshore.travelConnection.Transversal.Logging\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Cristian\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\CB\\Newshore.travelConnection\\Newshore.travelConnection.Transversal.Common\\Newshore.travelConnection.Transversal.Common.csproj": {
+                "projectPath": "C:\\CB\\Newshore.travelConnection\\Newshore.travelConnection.Transversal.Common\\Newshore.travelConnection.Transversal.Common.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.Extensions.Logging": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\CB\\Newshore.travelConnection\\Newshore.travelConnection.Transversal.Mapper\\Newshore.travelConnection.Transversal.Mapper.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\CB\\Newshore.travelConnection\\Newshore.travelConnection.Transversal.Mapper\\Newshore.travelConnection.Transversal.Mapper.csproj",
+        "projectName": "Newshore.travelConnection.Transversal.Mapper",
+        "projectPath": "C:\\CB\\Newshore.travelConnection\\Newshore.travelConnection.Transversal.Mapper\\Newshore.travelConnection.Transversal.Mapper.csproj",
+        "packagesPath": "C:\\Users\\Cristian\\.nuget\\packages\\",
+        "outputPath": "C:\\CB\\Newshore.travelConnection\\Newshore.travelConnection.Transversal.Mapper\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Cristian\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\CB\\Newshore.travelConnection\\Newshore.travelConnection.Application.DTO\\Newshore.travelConnection.Application.DTO.csproj": {
+                "projectPath": "C:\\CB\\Newshore.travelConnection\\Newshore.travelConnection.Application.DTO\\Newshore.travelConnection.Application.DTO.csproj"
+              },
+              "C:\\CB\\Newshore.travelConnection\\Newshore.travelConnection.Domain.Entity\\Newshore.travelConnection.Domain.Entity.csproj": {
+                "projectPath": "C:\\CB\\Newshore.travelConnection\\Newshore.travelConnection.Domain.Entity\\Newshore.travelConnection.Domain.Entity.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[12.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

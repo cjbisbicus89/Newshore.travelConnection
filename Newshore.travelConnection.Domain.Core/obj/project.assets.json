@@ -1,0 +1,189 @@
+{
+  "version": 3,
+  "targets": {
+    "net6.0": {
+      "Newtonsoft.Json/13.0.2": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/Newtonsoft.Json.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Newtonsoft.Json.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Newshore.travelConnection.Domain.Entity/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/Newshore.travelConnection.Domain.Entity.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Newshore.travelConnection.Domain.Entity.dll": {}
+        }
+      },
+      "Newshore.travelConnection.Domain.Interface/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Newshore.travelConnection.Domain.Entity": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Newshore.travelConnection.Domain.Interface.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Newshore.travelConnection.Domain.Interface.dll": {}
+        }
+      },
+      "Newshore.travelConnection.Infrastructure.Interface/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Newshore.travelConnection.Domain.Entity": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Newshore.travelConnection.Infrastructure.Interface.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Newshore.travelConnection.Infrastructure.Interface.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Newtonsoft.Json/13.0.2": {
+      "sha512": "R2pZ3B0UjeyHShm9vG+Tu0EBb2lC8b0dFzV9gVn50ofHXh9Smjk6kTn7A/FdAsC8B5cKib1OnGYOXxRBz5XQDg==",
+      "type": "package",
+      "path": "newtonsoft.json/13.0.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.md",
+        "README.md",
+        "lib/net20/Newtonsoft.Json.dll",
+        "lib/net20/Newtonsoft.Json.xml",
+        "lib/net35/Newtonsoft.Json.dll",
+        "lib/net35/Newtonsoft.Json.xml",
+        "lib/net40/Newtonsoft.Json.dll",
+        "lib/net40/Newtonsoft.Json.xml",
+        "lib/net45/Newtonsoft.Json.dll",
+        "lib/net45/Newtonsoft.Json.xml",
+        "lib/net6.0/Newtonsoft.Json.dll",
+        "lib/net6.0/Newtonsoft.Json.xml",
+        "lib/netstandard1.0/Newtonsoft.Json.dll",
+        "lib/netstandard1.0/Newtonsoft.Json.xml",
+        "lib/netstandard1.3/Newtonsoft.Json.dll",
+        "lib/netstandard1.3/Newtonsoft.Json.xml",
+        "lib/netstandard2.0/Newtonsoft.Json.dll",
+        "lib/netstandard2.0/Newtonsoft.Json.xml",
+        "newtonsoft.json.13.0.2.nupkg.sha512",
+        "newtonsoft.json.nuspec",
+        "packageIcon.png"
+      ]
+    },
+    "Newshore.travelConnection.Domain.Entity/1.0.0": {
+      "type": "project",
+      "path": "../Newshore.travelConnection.Domain.Entity/Newshore.travelConnection.Domain.Entity.csproj",
+      "msbuildProject": "../Newshore.travelConnection.Domain.Entity/Newshore.travelConnection.Domain.Entity.csproj"
+    },
+    "Newshore.travelConnection.Domain.Interface/1.0.0": {
+      "type": "project",
+      "path": "../Newshore.travelConnection.Domain.Interface/Newshore.travelConnection.Domain.Interface.csproj",
+      "msbuildProject": "../Newshore.travelConnection.Domain.Interface/Newshore.travelConnection.Domain.Interface.csproj"
+    },
+    "Newshore.travelConnection.Infrastructure.Interface/1.0.0": {
+      "type": "project",
+      "path": "../Newshore.travelConnection.Infrastructure.Interface/Newshore.travelConnection.Infrastructure.Interface.csproj",
+      "msbuildProject": "../Newshore.travelConnection.Infrastructure.Interface/Newshore.travelConnection.Infrastructure.Interface.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net6.0": [
+      "Newshore.travelConnection.Domain.Entity >= 1.0.0",
+      "Newshore.travelConnection.Domain.Interface >= 1.0.0",
+      "Newshore.travelConnection.Infrastructure.Interface >= 1.0.0",
+      "Newtonsoft.Json >= 13.0.2"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\Cristian\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\CB\\Newshore.travelConnection\\Newshore.travelConnection.Domain.Core\\Newshore.travelConnection.Domain.Core.csproj",
+      "projectName": "Newshore.travelConnection.Domain.Core",
+      "projectPath": "C:\\CB\\Newshore.travelConnection\\Newshore.travelConnection.Domain.Core\\Newshore.travelConnection.Domain.Core.csproj",
+      "packagesPath": "C:\\Users\\Cristian\\.nuget\\packages\\",
+      "outputPath": "C:\\CB\\Newshore.travelConnection\\Newshore.travelConnection.Domain.Core\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\Cristian\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net6.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "projectReferences": {
+            "C:\\CB\\Newshore.travelConnection\\Newshore.travelConnection.Domain.Entity\\Newshore.travelConnection.Domain.Entity.csproj": {
+              "projectPath": "C:\\CB\\Newshore.travelConnection\\Newshore.travelConnection.Domain.Entity\\Newshore.travelConnection.Domain.Entity.csproj"
+            },
+            "C:\\CB\\Newshore.travelConnection\\Newshore.travelConnection.Domain.Interface\\Newshore.travelConnection.Domain.Interface.csproj": {
+              "projectPath": "C:\\CB\\Newshore.travelConnection\\Newshore.travelConnection.Domain.Interface\\Newshore.travelConnection.Domain.Interface.csproj"
+            },
+            "C:\\CB\\Newshore.travelConnection\\Newshore.travelConnection.Infrastructure.Interface\\Newshore.travelConnection.Infrastructure.Interface.csproj": {
+              "projectPath": "C:\\CB\\Newshore.travelConnection\\Newshore.travelConnection.Infrastructure.Interface\\Newshore.travelConnection.Infrastructure.Interface.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net6.0": {
+        "targetAlias": "net6.0",
+        "dependencies": {
+          "Newtonsoft.Json": {
+            "target": "Package",
+            "version": "[13.0.2, )"
+          }
+        },
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

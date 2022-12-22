@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "Newshore.travelConnection.Domain.Interface/1.0.0": {
+        "dependencies": {
+          "Newshore.travelConnection.Domain.Entity": "1.0.0"
+        },
+        "runtime": {
+          "Newshore.travelConnection.Domain.Interface.dll": {}
+        }
+      },
+      "Newshore.travelConnection.Domain.Entity/1.0.0": {
+        "runtime": {
+          "Newshore.travelConnection.Domain.Entity.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Newshore.travelConnection.Domain.Interface/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Newshore.travelConnection.Domain.Entity/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

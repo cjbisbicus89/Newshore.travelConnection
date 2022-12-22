@@ -1,0 +1,58 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "Newshore.travelConnection.Application.Interface/1.0.0": {
+        "dependencies": {
+          "Newshore.travelConnection.Application.DTO": "1.0.0",
+          "Newshore.travelConnection.Domain.Entity": "1.0.0",
+          "Newshore.travelConnection.Transversal.Common": "1.0.0"
+        },
+        "runtime": {
+          "Newshore.travelConnection.Application.Interface.dll": {}
+        }
+      },
+      "Newshore.travelConnection.Application.DTO/1.0.0": {
+        "runtime": {
+          "Newshore.travelConnection.Application.DTO.dll": {}
+        }
+      },
+      "Newshore.travelConnection.Domain.Entity/1.0.0": {
+        "runtime": {
+          "Newshore.travelConnection.Domain.Entity.dll": {}
+        }
+      },
+      "Newshore.travelConnection.Transversal.Common/1.0.0": {
+        "runtime": {
+          "Newshore.travelConnection.Transversal.Common.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Newshore.travelConnection.Application.Interface/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Newshore.travelConnection.Application.DTO/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Newshore.travelConnection.Domain.Entity/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Newshore.travelConnection.Transversal.Common/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
