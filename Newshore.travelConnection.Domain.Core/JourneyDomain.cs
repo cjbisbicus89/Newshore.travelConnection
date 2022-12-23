@@ -37,7 +37,7 @@ namespace Newshore.travelConnection.Domain.Core
         {
             var consultRegisteredFlights = await _journeyRepository.GetListFlightsSaveAsync(origin,destination);
 
-            if(consultRegisteredFlights.Count() > 0)
+            if(consultRegisteredFlights.Count() == 0)
             {
                 var serviceApiNewshore = await _journeyRepository.GetListFlightsAsync();
                 var urlServiceApiNewshore = _serviceNewshoreAirDomain.GetUrlApiNewshore(serviceApiNewshore);
