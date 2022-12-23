@@ -6,6 +6,7 @@ using Dapper;
 using System.Data;
 using System.Threading.Tasks;
 using System.Collections.Generic;
+using System.Collections;
 
 
 namespace Newshore.travelConnection.Infrastructure.Repository
@@ -28,6 +29,22 @@ namespace Newshore.travelConnection.Infrastructure.Repository
                 return responseProcedure;
             }
         }
+
+        public async Task<IEnumerable<dynamic>> GetListFlightsSaveAsync(string origin, string destination)
+        {
+            using (var connection = _connectionFactory.GetConnection)
+            {
+                var queryProcedure = "ConsultFlights";
+                var parameters = new DynamicParameters();
+                parameters.Add("origin", origin);
+                parameters.Add("destination", destination);
+
+                var responseProcedure = await connection.QueryAsync<Journey>(queryProcedure, param: parameters, commandType: CommandType.StoredProcedure);
+                return responseProcedure;
+            }
+        }
+
+
 
     }
 }

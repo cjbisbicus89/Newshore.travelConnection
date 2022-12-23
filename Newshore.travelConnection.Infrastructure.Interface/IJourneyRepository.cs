@@ -9,5 +9,6 @@ namespace Newshore.travelConnection.Infrastructure.Interface
     public interface IJourneyRepository
     {
         Task<IEnumerable<dynamic>> GetListFlightsAsync();
+        Task<IEnumerable<dynamic>> GetListFlightsSaveAsync(string origin, string destination);
     }
 }

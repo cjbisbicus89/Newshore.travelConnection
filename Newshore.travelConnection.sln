@@ -37,7 +37,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Newshore.travelConnection.A
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Newshore.travelConnection.Services.WebApi", "Newshore.travelConnection.Services.WebApi\Newshore.travelConnection.Services.WebApi.csproj", "{6B169AEA-5B3F-4383-8A52-38C253777CA9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Newshore.travelConnection.Transversal.Logging", "Newshore.travelConnection.Transversal.Logging\Newshore.travelConnection.Transversal.Logging.csproj", "{18EFDE8D-87B3-46F3-BCBE-A6D1043DED5A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Newshore.travelConnection.Transversal.Logging", "Newshore.travelConnection.Transversal.Logging\Newshore.travelConnection.Transversal.Logging.csproj", "{18EFDE8D-87B3-46F3-BCBE-A6D1043DED5A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
