@@ -4,6 +4,7 @@ using Newshore.travelConnection.Domain.Entity.Response;
 using Newshore.travelConnection.Domain.Interface;
 using Newshore.travelConnection.Infrastructure.Interface;
 using Newtonsoft.Json;
+using System.Linq;
 using System.Net;
 
 namespace Newshore.travelConnection.Domain.Core
@@ -63,29 +64,73 @@ namespace Newshore.travelConnection.Domain.Core
                 if(flightsFilteredByOriginDestination != null)
                 {
                     var flightAuxiliaryList = flightsFilteredByOriginDestination;
+
+                    List<string> listDestination = new List<string>();
                    
-                    var searchByFirstOrigin = flightsFilteredByOriginDestination.Where(x => x.Origin== origin
-                                      && x.Destination == (flightAuxiliaryList.Where(i => i.Destination == destination)
-                                      .Single().Origin)).ToList();
-                    var searchByFirstDestination = flightsFilteredByOriginDestination.Where(x => 
-                                        x.Origin == (flightAuxiliaryList.Where(i => i.Destination == destination)
-                                        .Single().Origin)
-                                         && x.Destination == destination ).ToList();
+                    foreach (var item in flightsFilteredByOriginDestination)
+                    {
+                        if(item.Origin == origin)
+                            listDestination.Add(item.Destination);
+                    }
+
+                    var connectingFlights = flightsFilteredByOriginDestination
+                         .Where(x => listDestination.Any(y => y == x.Origin) && x.Destination == destination).ToList();
+
+                    var searchByFirstOrigin = flightsFilteredByOriginDestination
+                        .Where(x => connectingFlights.Any(y => y.Origin == x.Destination) && x.Origin == origin).ToList();
+
+                    var searchByFirstDestination = flightsFilteredByOriginDestination
+                        .Where(x => connectingFlights.Any(y => y.Origin == x.Origin) && x.Destination == destination).ToList();
+
+                    List<Flight > listOfOrderedFlights = new List<Flight>();
+                    double priceTotal = 0;
+                    foreach (var itemFirst in searchByFirstOrigin)
+                    {
+                        Flight flightOrderedOrigin = new Flight();
+                        flightOrderedOrigin.Origin = itemFirst.Origin;
+                        flightOrderedOrigin.Destination = itemFirst.Destination;
+                        flightOrderedOrigin.Price = itemFirst.Price;
+                        flightOrderedOrigin.transport = itemFirst.transport;
+                        listOfOrderedFlights.Add(flightOrderedOrigin);
+                        priceTotal = priceTotal+flightOrderedOrigin.Price;
+                        foreach (var itemDestination in searchByFirstDestination)
+                        {
+                            
+                            if(itemDestination.Origin == flightOrderedOrigin.Destination)
+                            {
+                                Flight flightOrderedDestination = new Flight();
+                                flightOrderedDestination.Origin = itemDestination.Origin;
+                                flightOrderedDestination.Destination = itemDestination.Destination;
+                                flightOrderedDestination.Price = itemDestination.Price;
+                                flightOrderedDestination.transport = itemDestination.transport;
+                                listOfOrderedFlights.Add(flightOrderedDestination);
+                                priceTotal = priceTotal + flightOrderedDestination.Price;
+                            }
+                        }
+                    }
+
 
                     if (searchByFirstOrigin.Count > 0 && searchByFirstDestination.Count > 0)
                     {
                         Journey journey = new Journey();
                         journey.Origin = origin;
                         journey.Destination = destination;
-                        journey.flight = searchByFirstOrigin.Concat(searchByFirstDestination).ToList();
-                        journey.Price = searchByFirstOrigin.Single().Price + searchByFirstDestination.Single().Price;
+                        journey.flight = listOfOrderedFlights;
+                        journey.Price = priceTotal;
                         listFlightRoute.Add(journey);
                     }
                 }
 
             }
-
-            return new Response<dynamic>() { success = true, error = false, result = listFlightRoute };
+            if (listFlightRoute.Count == 0)
+            {
+                return new Response<dynamic>() { success = false, error = false, result = listFlightRoute };
+            }
+            else
+            {
+                return new Response<dynamic>() { success = true, error = false, result = listFlightRoute };
+            }
+            
         }
 
         #endregion

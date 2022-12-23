@@ -33,6 +33,7 @@ namespace Newshore.travelConnection.Application.Main
             {
                 var response = await _journeyDomain.GetListFlightsAsync();
                 response.message = "Consulta Exitosa";
+                _logger.LogInformation("se realizo correctamente la consulta");
                 return response;
             }
             catch (Exception e)
@@ -47,7 +48,16 @@ namespace Newshore.travelConnection.Application.Main
             try
             {
                 var response = await _journeyDomain.GetJourneyByOriginAndDestination(origin, destination);
-                response.message = "Consulta Exitosa";
+
+                if(!response.success)
+                {
+                    response.message = "No se encontro una ruta de vuelo";
+                }
+                else
+                {
+                    response.message = "Consulta Exitosa";
+                }
+                _logger.LogInformation("se realizo correctamente la consulta");
                 return response;
             }
             catch (Exception e)
