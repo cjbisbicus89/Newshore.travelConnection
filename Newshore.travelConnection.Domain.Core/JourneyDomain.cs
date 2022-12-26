@@ -4,8 +4,10 @@ using Newshore.travelConnection.Domain.Entity.Response;
 using Newshore.travelConnection.Domain.Interface;
 using Newshore.travelConnection.Infrastructure.Interface;
 using Newtonsoft.Json;
+using System.Collections.Generic;
 using System.Linq;
 using System.Net;
+using System.Reflection;
 
 namespace Newshore.travelConnection.Domain.Core
 {
@@ -88,6 +90,7 @@ namespace Newshore.travelConnection.Domain.Core
 
                         List<Flight> listOfOrderedFlights = new List<Flight>();
                         double priceTotal = 0;
+
                         foreach (var itemFirst in searchByFirstOrigin)
                         {
                             Flight flightOrderedOrigin = new Flight();
@@ -99,7 +102,6 @@ namespace Newshore.travelConnection.Domain.Core
                             priceTotal = priceTotal + flightOrderedOrigin.Price;
                             foreach (var itemDestination in searchByFirstDestination)
                             {
-
                                 if (itemDestination.Origin == flightOrderedOrigin.Destination)
                                 {
                                     Flight flightOrderedDestination = new Flight();
@@ -133,25 +135,91 @@ namespace Newshore.travelConnection.Domain.Core
                 }
                 else
                 {
-
+                    var responseSaveJourneyFligh = await PersistConsultedFlights(listFlightRoute);
                     return new Response<dynamic>() { success = true, error = false, result = listFlightRoute };
                 }
             }
             else
             {
-                return new Response<dynamic>() { success = true, error = false, result = null };
+                var responsePersistQuery = await GetPersistConsultedFlights(consultRegisteredFlights);
+                return new Response<dynamic>() { success = true, error = false, result = responsePersistQuery.result };
             }
 
-
-
-
-            
         }
 
         #endregion
+        public async Task<Response<dynamic>> PersistConsultedFlights(List<Journey> listFlightRoute)
+        {
 
-      
+            foreach(var itemRoute in listFlightRoute)
+            {
+                var insertJourneyflight = await _journeyRepository.InsertJourneyflightAsync(itemRoute.Origin, itemRoute.Destination, itemRoute.Price);
 
 
+                foreach (var itemFlight in itemRoute.flight)
+                {
+                    
+                    Transport transport = new Transport();
+                    transport = itemFlight.transport;
+
+                    var responseInserTranport =  await _journeyRepository.InsertTranportAsync(transport);
+                    var lastTranportId= await _journeyRepository.GetLastSavedTransportAsync();
+                    if (lastTranportId.SingleOrDefault().IdTransport != 0)
+                    {
+                        var responseFlight = await _journeyRepository.InsertFlightAsync(lastTranportId.SingleOrDefault().IdTransport, itemFlight.Origin, itemFlight.Destination, itemFlight.Price,Convert.ToInt32(insertJourneyflight.SingleOrDefault().IdFlight));
+                    }
+
+                }
+                
+            }
+            return new Response<dynamic>() { success = true, error = false, result = null };
+        }
+
+        public async Task<Response<dynamic>> GetPersistConsultedFlights(dynamic? consultRegisteredFlights)
+        {
+            List<Journey> listFlightRoute = new List<Journey>();
+
+            foreach(var itemJourney in consultRegisteredFlights)
+            {
+                var test = itemJourney.Origin;
+                var listFlight = await _journeyRepository.GetListFlightsJourneyAsync(itemJourney.Origin, itemJourney.Destination);
+
+                List<Flight> listOfOrderedFlights = new List<Flight>();
+                foreach (var itemFlight in listFlight)
+                {  
+
+                    Flight flightOrderedOrigin = new Flight();
+                    flightOrderedOrigin.Origin = itemFlight.Origin;
+                    flightOrderedOrigin.Destination = itemFlight.Destination;
+                    flightOrderedOrigin.Price = itemFlight.Price;
+                    flightOrderedOrigin.transport = ConvertObjetToClass(await _journeyRepository.GetListFlightsTransportAsync(itemFlight.IdTransport));
+                    listOfOrderedFlights.Add(flightOrderedOrigin);
+                }
+
+
+                Journey journey = new Journey();
+                journey.Origin = itemJourney.Origin;
+                journey.Destination = itemJourney.Destination;
+                journey.flight = listOfOrderedFlights;
+                journey.Price = itemJourney.Price;
+                listFlightRoute.Add(journey);
+
+
+            }
+
+            return new Response<dynamic>() { success = true, error = false, result = listFlightRoute };
+        }
+
+        private Transport ConvertObjetToClass(dynamic transport)
+        {
+            Transport listTranport = new Transport();
+            foreach(var itemTransport in transport)
+            {
+                listTranport.FlightCarrier = itemTransport.FlightCarrier;
+                listTranport.FlightNumber = itemTransport.FlightNumber;
+
+            }
+            return listTranport;
+        }
     }
 }
